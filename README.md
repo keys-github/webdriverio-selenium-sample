@@ -1,5 +1,5 @@
-# WebdriverIO Tutorial
-[WebdriverIO](http://webdriver.io/) Integration with LambdaTest
+# WebdriverIO Tutorial — TestMu AI (Formerly LambdaTest)
+[WebdriverIO](http://webdriver.io/) Integration with TestMu AI
 
 <img src = "https://miro.medium.com/max/2488/1*2ntKtVBowGdACso6Gcmy1A.jpeg" height = "400">
 
@@ -20,9 +20,9 @@ To verify the node version (Node version < 18)
 
 `npm install selenium-webdriver `
 
- 4. **LambdaTest Authentication Credentials:** Make sure you have your LambdaTest credentials with you to run test automation scripts with Jest on LambdaTest Selenium Grid. You can obtain these credentials from the [LambdaTest Automation Dashboard](https://automation.lambdatest.com/) or through [LambdaTest Profile](https://accounts.lambdatest.com/detail/profile).
+ 4. **TestMu AI Authentication Credentials:** Make sure you have your TestMu AI credentials with you to run test automation scripts with Jest on TestMu AI Selenium Grid. You can obtain these credentials from the [TestMu AI Automation Dashboard](https://automation.lambdatest.com/) or through [TestMu AI Profile](https://accounts.lambdatest.com/detail/profile).
 
-Set LambdaTest Username and Access Key in environment variables.
+Set TestMu AI Username and Access Key in environment variables.
 
 * For Linux/macOS:
 `export LT_USERNAME="YOUR_USERNAME"
@@ -41,12 +41,12 @@ set LT_ACCESS_KEY="YOUR ACCESS KEY"`
 >
 >  [![Open in Gitpod](open-in-gitpod.png)](https://gitpod.io/#https://github.com/LambdaTest/webdriverio-selenium-sample)
 >
->   After the gitpod session launches, navigate to the terminal and run the following commands to save your [LambdaTest Credentials](https://accounts.lambdatest.com/detail/profile) to gitpod as environment variables:
+>   After the gitpod session launches, navigate to the terminal and run the following commands to save your [TestMu AI Credentials](https://accounts.lambdatest.com/detail/profile) to gitpod as environment variables:
 >   ```
 >   eval $(gp env -e LT_USERNAME=******)
 >   eval $(gp env -e LT_ACCESS_KEY=******)
 >   ```
->   Click the following link if you're unsure how to [access your LambdaTest credentials.](https://www.lambdatest.com/support/docs/using-environment-variables-for-authentication-credentials/)
+>   Click the following link if you're unsure how to [access your TestMu AI credentials.](https://www.testmuai.com/support/docs/using-environment-variables-for-authentication-credentials/)
 >   Also, if you start a new terminal in gitpod, you have to run the following command to reset envrionment variables:
 >   ```
 >   eval $(gp env -e)
@@ -136,13 +136,13 @@ The test script will do the following actions:
 4. Fetch the title of the web page.
 5. Close the browser and display the fetched title in the console.
 
-That’s it. Before we deep dive into the test script, we need to declare our desired capabilities. These desired capabilities will help us define the testing environment such as browser version, operating system, and more. You can leverage [LambdaTest Desired Capabilities Generator](https://www.lambdatest.com/capabilities-generator/) to specify the desired capabilities class.
+That’s it. Before we deep dive into the test script, we need to declare our desired capabilities. These desired capabilities will help us define the testing environment such as browser version, operating system, and more. You can leverage [TestMu AI Desired Capabilities Generator](https://www.testmuai.com/capabilities-generator/) to specify the desired capabilities class.
 
-### [LambdaTest Desired Capabilities Generator](https://www.lambdatest.com/capabilities-generator/) 
+### [TestMu AI Desired Capabilities Generator](https://www.testmuai.com/capabilities-generator/) 
 
-Let us fetch the desired capabilities class from the **LambdaTest Desired Capabilities Generator** to run the script on LambdaTest cloud-based Selenium Grid.
+Let us fetch the desired capabilities class from the **TestMu AI Desired Capabilities Generator** to run the script on TestMu AI cloud-based Selenium Grid.
 
-![capability-generator](https://www.lambdatest.com/blog/wp-content/uploads/2020/05/pasted-image-0.png)
+![capability-generator](https://www.testmuai.com/blog/wp-content/uploads/2020/05/pasted-image-0.png)
 
 With the capability generator, you can specify a variety of configurations in multiple programming languages.
 
@@ -221,7 +221,7 @@ If you notice the package.json, you will find required dependencies added for th
 
 ## Running The First WebdriverIO Test Script
 
-Open terminal or command prompt in the project directory where you cloned [GitHub repository for WebdriverIO](https://github.com/LambdaTest/webdriverio-selenium-sample), then run the below command to execute your first WebdriverIO test script on LambdaTest Selenium Grid. As per our declared capabilities, this test should run over Google Chrome 64.
+Open terminal or command prompt in the project directory where you cloned [GitHub repository for WebdriverIO](https://github.com/LambdaTest/webdriverio-selenium-sample), then run the below command to execute your first WebdriverIO test script on TestMu AI Selenium Grid. As per our declared capabilities, this test should run over Google Chrome 64.
 
 `npm run single`
 
@@ -235,13 +235,13 @@ The above command is defined in the package.json file, and can be provided with 
 
 ```
 
-Once you run the command, you can notice whether the test passed or failed which can over LambdaTest Automation Dashboard. In the below snapshot, we can see the test got passed.
+Once you run the command, you can notice whether the test passed or failed which can over TestMu AI Automation Dashboard. In the below snapshot, we can see the test got passed.
 
-![](https://www.lambdatest.com/blog/wp-content/uploads/2020/05/automation-testing.png)
+![](https://www.testmuai.com/blog/wp-content/uploads/2020/05/automation-testing.png)
 
 Also , if you look at your **Output Console**, you will find the **title of the web page**.
 
-![](https://www.lambdatest.com/blog/wp-content/uploads/2020/05/testing-script.png)
+![](https://www.testmuai.com/blog/wp-content/uploads/2020/05/testing-script.png)
 
 ## Testing Locally Hosted Web-Applications
 
@@ -268,17 +268,17 @@ exports.config = {
 
 **Curious to know more about Lambda Tunnel To Test Locally Hosted Pages?**
 
-Refer to our support documentation for more information on [Lambda Tunnel](https://www.lambdatest.com/support/docs/testing-locally-hosted-pages/). 
+Refer to our support documentation for more information on [Lambda Tunnel](https://www.testmuai.com/support/docs/testing-locally-hosted-pages/). 
 
 ### Want To Run Lambda Tunnel Without Using Command Line?
 
-Download the **Underpass** app for your operating system. Refer to our support documentation for more information on [Lambda Underpass-tunnel-app](https://www.lambdatest.com/support/docs/underpass-tunnel-application/)
+Download the **Underpass** app for your operating system. Refer to our support documentation for more information on [Lambda Underpass-tunnel-app](https://www.testmuai.com/support/docs/underpass-tunnel-application/)
 
 ## Parallel Execution
 
 Webdriverio does support parallel execution of code, i.e. execution of same code simultaneously on multiple browsers/device combinations which not only saves efforts to test the code, but also reduces the total execution time of tests.
 
-To perform parallel execution of the above WebdriverIO test script over LambdaTest [Selenium Grid](https://www.lambdatest.com/selenium-automation), you would only need to modify the configuration file with multiple capabilities. Following is the snippet for the same. You can find this file as [parallel.conf.js](https://github.com/LambdaTest/webdriverio-selenium-sample/blob/master/conf/parallel.conf.js).
+To perform parallel execution of the above WebdriverIO test script over TestMu AI [Selenium Grid](https://www.testmuai.com/selenium-automation), you would only need to modify the configuration file with multiple capabilities. Following is the snippet for the same. You can find this file as [parallel.conf.js](https://github.com/LambdaTest/webdriverio-selenium-sample/blob/master/conf/parallel.conf.js).
 
 ```javascript
 exports.config = {
@@ -364,19 +364,29 @@ So, the above script will run on different browsers simultaneously with the belo
 
 `npm run parallel`
 
-Below is the screenshot for the parallel test execution in the [LambdaTest Automation Dashboard](https://automation.lambdatest.com/).
+Below is the screenshot for the parallel test execution in the [TestMu AI Automation Dashboard](https://automation.lambdatest.com/).
 
-![](https://www.lambdatest.com/blog/wp-content/uploads/2020/05/seleniumwebdriverIO.png)
+![](https://www.testmuai.com/blog/wp-content/uploads/2020/05/seleniumwebdriverIO.png)
 
 ## Running test with QA - Deputy integration
 `testRunId={test_run_id} testCaseId={test_case_id} apiToken={api_token} email={email} npm run integration`
 if you do not wish to pass above arguments via you can provide their values within test itself, they are declared in tests/specs/integration_test.js:L11-L15
 
-## About LambdaTest
+## 🚀 [LambdaTest is Now TestMu AI](https://www.testmuai.com/lambdatest-is-now-testmuai/)
 
-[LambdaTest](https://www.lambdatest.com/) is a cloud based selenium grid infrastructure that can help you run automated cross browser compatibility tests on 2000+ different browser and operating system environments. LambdaTest supports all programming languages and frameworks that are supported with Selenium, and have easy integrations with all popular CI/CD platforms. It's a perfect solution to bring your [selenium automation testing](https://www.lambdatest.com/selenium-automation) to cloud based infrastructure that not only helps you increase your test coverage over multiple desktop and mobile browsers, but also allows you to cut down your test execution time by running tests on parallel.
+👋 Welcome to TestMu AI, the next evolution of LambdaTest. As of January 2026, LambdaTest has officially rebranded to TestMu AI. We have evolved from a cross-browser testing cloud into a unified, AI-native quality engineering platform designed for the modern DevOps era.
 
+Whether you have been part of the LambdaTest community for years or are just discovering TestMu AI, our mission remains the same: to help you ship faster with high-scale test execution, autonomous testing, and deep quality analytics.
 
-## Resources
-### [SeleniumHQ Documentation](http://www.seleniumhq.org/docs/)
-### [WebdriverIO Documentation](https://webdriver.io/docs/gettingstarted.html)
+**🔄 Our Rebrand Journey**
+
+We chose the name TestMu AI to reflect our shift towards intelligent, autonomous testing. While our identity has changed, our core technology and commitment to the testing community stay the same.
+
+**✨ Specialties**
+
+- 🤖 AI-Native Test Execution (Formerly LambdaTest)
+- ⚡ Autonomous Test Automation
+- 🌐 Cross-Browser & Mobile Testing
+- 📊 Unified Quality Intelligence
+
+👉 Find [LambdaTest's New Home](https://www.testmuai.com/).
